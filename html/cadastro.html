@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Clínica Psicológica - Cadastro</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="cadastro">
+
+            <h1>Crie sua conta</h1>
+            <p>Faça seu cadastro para acessar nossa clínica.</p>
+
+            <form>
+
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="Digite seu telefone" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Crie uma senha" required>
+
+                <label for="confirmar-senha">Confirmar senha</label>
+                <input type="password" id="confirmar-senha" placeholder="Digite sua senha novamente" required>
+
+                <label for="tipo">Tipo de cadastro</label>
+                <select id="tipo" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="paciente">Paciente</option>
+                    <option value="psicologo">Psicólogo</option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+            <p class="login-link">
+                Já possui uma conta?
+                <a href="login.html">Faça login</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
