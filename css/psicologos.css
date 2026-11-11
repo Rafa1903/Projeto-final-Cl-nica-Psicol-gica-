@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    color: white;
+}
+
+header {
+    background-color: #151515;
+    padding: 22px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    color: #049643;
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #049643;
+}
+
+.botao-cadastro {
+    background-color: #0d861f;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.titulo {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.titulo h2 {
+    color: #049643;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.titulo p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.profissionais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 50px 50px;
+}
+
+.psicologo {
+    background-color: #1c1c1c;
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.psicologo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #049643;
+    margin-bottom: 20px;
+}
+
+.psicologo h3 {
+    color: #049643;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.psicologo p {
+    color: #ccc;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.psicologo strong {
+    color: white;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #0d861f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: #049643;
+}
+
+
+footer {
+    background-color: #151515;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+    color: #aaa;
+    margin-top: 30px;
+}
+
+@media (max-width: 750px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .profissionais {
+        padding: 20px;
+    }
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Rafael">
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/agendamento.css">
+    <title>Agendamento - Clínica Psicológica</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Clínica Psicológica</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendar</a></li>
+                <li><a href="psicologos.html">Psicólogos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html" class="botao-cadastro">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="introducao">
+            <h2>Agende sua consulta</h2>
+            <p>
+                Escolha o profissional, o tipo de atendimento e o melhor
+                horário para cuidar da sua saúde emocional.
+            </p>
+        </section>
+
+        <section class="area-agendamento">
+
+            <form action="#" method="post">
+
+                <div class="grupo-formulario">
+                    <h3>1. Escolha o psicólogo</h3>
+
+                    <label for="psicologo">Psicólogo:</label>
+                    <select id="psicologo" name="psicologo" required>
+                        <option value="">Selecione um profissional</option>
+                        <option value="ana">Ana Silva</option>
+                        <option value="carlos">Carlos Souza</option>
+                        <option value="mariana">Mariana Costa</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <h3>2. Tipo de atendimento</h3>
+
+                    <label for="servico">Serviço:</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="individual">Consulta individual</option>
+                        <option value="inicial">Primeira consulta</option>
+                        <option value="retorno">Consulta de retorno</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <h3>3. Escolha a data e o horário</h3>
+
+                    <div class="campos-data">
+                        <div>
+                            <label for="data">Data da consulta:</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+
+                        <div>
+                            <label for="horario">Horário:</label>
+                            <select id="horario" name="horario" required>
+                                <option value="">Selecione um horário</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grupo-formulario">
+                    <h3>4. Tipo de Abordagem</h3>
+
+                    <label for="abordagem"> Abordagem:</label>
+                    <select id="abordagem" name="abordagem" required>
+                        <option value="">Selecione qual tipo de abordagem</option>
+                        <option value=""></option>
+                    </select>
+
+                </div>
+                <div class="grupo-formulario">
+                    <h3>5. Informações adicionais</h3>
+
+                    <label for="observacoes">Observações (opcional):</label>
+                    <textarea id="observacoes" name="observacoes" rows="4"
+                        placeholder="Escreva alguma informação que considere importante..."></textarea>
+                </div>
+
+                <div class="resumo">
+                    <h3>Resumo do agendamento</h3>
+                    <p>Confira as informações selecionadas antes de confirmar.</p>
+                    <p><strong>Profissional:</strong> A definir</p>
+                    <p><strong>Serviço:</strong> A definir</p>
+                    <p><strong>Valor:</strong> Consultar profissional</p>
+                </div>
+
+                <button type="submit">Confirmar agendamento</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Clínica Psicológica. Todos os direitos reservados.</p>
+        <p>Site criado por João Rafael</p>
+
+    </footer>
+
+</body>
+
+</html>

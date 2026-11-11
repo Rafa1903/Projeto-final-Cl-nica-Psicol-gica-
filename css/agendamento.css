@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    color: white;
+}
+
+header {
+    background-color: #151515;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1 {
+    color: #049643;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #049643;
+}
+
+.botao-cadastro {
+    background-color: #0d861f;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.botao-cadastro:hover {
+    background-color: #049643;
+    color: white;
+}
+
+.introducao {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.introducao h2 {
+    color: #049643;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.introducao p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.area-agendamento {
+    max-width: 750px;
+    margin: 20px auto 60px;
+    padding: 35px;
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.grupo-formulario {
+    margin-bottom: 30px;
+}
+
+.grupo-formulario h3 {
+    color: #049643;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #101010;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+    outline: none;
+    border-color: #049643;
+}
+
+.grupo-formulario textarea {
+    resize: vertical;
+}
+
+.campos-data {
+    display: flex;
+    gap: 20px;
+}
+
+.campos-data div {
+    flex: 1;
+}
+
+.resumo {
+    background-color: #151515;
+    border: 1px solid #333;
+    border-left: 4px solid #049643;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.resumo h3 {
+    color: #049643;
+    margin-bottom: 15px;
+}
+
+.resumo p {
+    color: #ccc;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.resumo strong {
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0d861f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #049643;
+}
+
+footer {
+    background-color: #151515;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .area-agendamento {
+        margin: 20px;
+        padding: 25px 20px;
+    }
+
+    .campos-data {
+        flex-direction: column;
+    }
+}
