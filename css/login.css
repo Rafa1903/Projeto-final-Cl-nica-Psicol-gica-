@@ -85,6 +85,7 @@ button:hover {
 .cadastro-link {
     margin-top: 25px;
     font-size: 14px;
+    float: left;
 }
 
 .cadastro-link a {
